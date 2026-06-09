@@ -7,9 +7,9 @@ Tested up to: 6.5 \
 Requires PHP: 8.0 \
 Stable tag: 1.0.0 \
 License: GPLv2 or later \
-License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html) \
+License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html) 
 
-Automatically calculates and displays clean, estimated reading time metrics for your WordPress posts, pages, and custom post types. \
+Automatically calculates and displays clean, estimated reading time metrics for your WordPress posts, pages, and custom post types.
 
 == Description ==
 
