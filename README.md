@@ -1,15 +1,15 @@
-=== Reading Time Calculator ===
-Contributors: Saad
-Plugin URI: [https://sitecroftdev.vercel.app/plugins/reading-time-calculator](https://sitecroftdev.vercel.app/plugins/reading-time-calculator)
-Tags: reading time, estimated reading time, read time, reading time calculator, word count
-Requires at least: 6.0
-Tested up to: 6.5
-Requires PHP: 8.0
-Stable tag: 1.0.0
-License: GPLv2 or later
-License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html)
+=== Reading Time Calculator === \
+Contributors: Saad \
+Plugin URI: [https://sitecroftdev.vercel.app/plugins/reading-time-calculator](https://sitecroftdev.vercel.app/plugins/reading-time-calculator) \
+Tags: reading time, estimated reading time, read time, reading time calculator, word count \
+Requires at least: 6.0 \
+Tested up to: 6.5 \
+Requires PHP: 8.0 \
+Stable tag: 1.0.0 \
+License: GPLv2 or later \
+License URI: [https://www.gnu.org/licenses/gpl-2.0.html](https://www.gnu.org/licenses/gpl-2.0.html) \
 
-Automatically calculates and displays clean, estimated reading time metrics for your WordPress posts, pages, and custom post types.
+Automatically calculates and displays clean, estimated reading time metrics for your WordPress posts, pages, and custom post types. \
 
 == Description ==
 
@@ -27,10 +27,10 @@ The plugin works seamlessly right out of the box with optimal default configurat
 * **Translation-Ready Core:** Prepared fully for localization with strict text domain bindings across all string variations.
 * **Lightweight Custom Styling:** Features zero bulky CSS grid framework dependencies. Employs crisp modern CSS variables that adapt effortlessly into your active layout theme context.
 
-= Performance & Architecture Optimization =
+= Performance & Architecture Optimization = \
 This plugin is built with a strict performance-first mentality for enterprise scale. Instead of running expensive string calculations and regex evaluations on every single raw database query page load, Reading Time Calculator integrates cleanly with the WordPress Transients API. Calculations are processed exactly once and securely cached for up to 24 hours. The transient cache is selectively flushed only when a specific post layout is updated or when your site administrator alters global plugin calculations from the settings backend.
 
-= Global Configurations & Options API =
+= Global Configurations & Options API = \
 Manage complete control over global plugin behaviors from a central interface panel nested under **Settings -> Reading Time Calculator**. Available customization hooks include:
 
 * **Enable Plugin:** A universal global checkbox master switch to instantly toggle automatic display injections across your entire ecosystem.
@@ -39,13 +39,13 @@ Manage complete control over global plugin behaviors from a central interface pa
 * **Display Position:** Direct dropdown navigation mapping execution hooks to Before Content, After Content, Both Before and After, or Disabled (Manual Injection Mode).
 * **Supported Post Types:** A dynamic list of checkboxes scanning your entire active theme structure to selectively activate reading metrics only where they make strategic sense.
 
-= Manual Shortcode Injections =
+= Manual Shortcode Injections = \
 For complex design frameworks, template layouts, or theme structures where automatic content hooks do not fit, take control manually using our highly optimized shortcode ecosystem:
 
 * `[reading_time]` - Instantly renders the styled reading time metric for the current post loop context it resides within.
 * `[reading_time post_id="123"]` - Queries, calculates, and outputs the unique localized reading calculation for a specific designated Post ID outside of the active page loop.
 
-= Core Gutenberg Block Support =
+= Core Gutenberg Block Support = \
 Reading Time Calculator includes a dedicated, zero-configuration Gutenberg block entitled **Reading Time**.
 To use the block:
 
@@ -65,16 +65,16 @@ To use the block:
 
 == Frequently Asked Questions ==
 
-= Does this plugin slow down massive blogs with thousands of long-form articles? =
+= Does this plugin slow down massive blogs with thousands of long-form articles? = \
 Absolutely not. The plugin code utilizes modern PHP object structures and implements rigorous transient caching. When an article is requested, it checks the database cache first. The actual word-counting loop runs only when a post is completely modified or viewed for the first time in 24 hours, keeping database performance crisp.
 
-= What happens to shortcodes or embedded HTML layout elements inside my posts? =
+= What happens to shortcodes or embedded HTML layout elements inside my posts? = \
 Our underlying engine sanitizes raw post contents with `strip_shortcodes()` and `wp_strip_all_tags()` before counting words. This means layout code, script blocks, shortcode text handles, and design markup tags are completely scrubbed from calculation totals, leaving only accurate text metrics.
 
-= If I select "Disabled" under the Display Position settings, will shortcodes still work? =
+= If I select "Disabled" under the Display Position settings, will shortcodes still work? = \
 Yes. Setting the Display Position setting to "Disabled" completely halts automatic content filter overrides across theme layouts, but leaves your shortcode functions and Gutenberg blocks fully operational. This is the ideal setup for advanced builders wanting manual control over where metrics appear.
 
-= Does this plugin leave old orphan options inside my database if I remove it? =
+= Does this plugin leave old orphan options inside my database if I remove it? = \
 No. We adhere to official cleanup guidelines. When you click **Delete** from your WordPress backend, our standalone `uninstall.php` routine executes automatically. This safely drops global option settings arrays and deletes all cached reading time transients from your database.
 
 == Changelog ==
@@ -89,5 +89,5 @@ No. We adhere to official cleanup guidelines. When you click **Delete** from you
 
 == Upgrade Notice ==
 
-= 1.0.0 =
+= 1.0.0 = \
 Initial deployment. Install this version to immediately enable clean, production-grade reading time indicators across your site structure.
